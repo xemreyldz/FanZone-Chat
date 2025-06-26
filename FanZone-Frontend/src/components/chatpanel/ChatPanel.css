@@ -1,0 +1,89 @@
+.chatpanel-container.light{
+  display: flex;
+  flex-direction: column;
+  height: 95.5vh; /* Tüm ekranı kapla */
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 40px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.chatpanel-container.dark {
+  background-color: #121212;
+ display: flex;
+  flex-direction: column;
+  height: 95.5vh; /* Tüm ekranı kapla */
+  padding: 10px;
+  border-radius: 40px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.chatpanel-header{
+  margin-bottom: 10px;
+  border-bottom: 1px solid #444;
+  padding: 10px 0 10px 5px;
+  display: flex;
+  align-items: center;
+  gap: 2;
+  align-items: center;
+  justify-content: space-between;
+}
+.chatpanel-groupHeader{
+  color: #000;
+  margin-left: 7px;
+}
+.chatpanel-left {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  font-family: "inter";
+}
+.chatpanel-message-settings {
+  flex: 1; /* Üst ve alt sabit alanlar dışında kalan boşluğu kapla */
+  overflow-y: auto; /* Scroll çıksın */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px 16px;
+  min-height: 0; /* önemli: scroll'un çalışması için */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer/Edge */
+}
+.chatpanel-input {
+  padding: 12px;
+  background-color: #f1f1f1;
+  flex-shrink: 0; /* büyüyüp container'ı taşımasın */
+}
+
+.chatpanel-their-message{
+  display: flex;
+  align-items: flex-start;
+  gap: 1;
+}
+.chatpanel-their-avatar{
+  height: 50px !important;
+  width: 50px !important;
+  margin-left: 10px;
+}
+
+.chatpanel-their-message-body{
+  margin-left: 5px;
+}
+.chatpanel-their-paper{
+  border-top-right-radius: 20px !important;
+
+  border-bottom-left-radius: 20px !important;
+}
+
+.chatpanel-myMessage{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  
+}
+.chatpanel-my-paper{
+  border-top-left-radius:20px !important ;
+  border-bottom-right-radius: 20px !important;
+
+}

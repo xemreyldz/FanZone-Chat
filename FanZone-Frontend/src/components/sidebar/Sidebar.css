@@ -1,0 +1,30 @@
+.homePage-sidebar .MuiDrawer-paper {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin-top: 24px; /* MUI mt: 3 = 3*8px */
+  height: calc(100% - 48px);
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: #faed38;
+  transition: width 0.3s;
+  width: 60px; /* collapsedWidth başlangıç değeri */
+}
+.homePage-sidebar.open .MuiDrawer-paper {
+  width: 250px; /* drawerWidth */
+}
+
+.homePage-sidebar.collapsed .MuiDrawer-paper {
+  width: 80px; /* collapsedWidth */
+}
+.custom-add-btn {
+  background-color: black !important;
+  color: white !important;
+  border-radius: 50% !important;
+  width: 48px !important;
+  height: 48px !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+

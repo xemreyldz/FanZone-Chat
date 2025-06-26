@@ -1,0 +1,164 @@
+.register-container{
+    display: flex;
+     background-image: url("../../assets/background/stadyum.png");
+    background-size: cover;
+    background-position: center; 
+    width: 100%;
+    height: 100vh;
+}
+.register-container-left, .register-container-right{
+    width: 50%;
+    height: 100vh;
+}
+.register-container-left{
+     background-color: rgba(255, 255, 255, 0.1); /* %50 saydam beyaz */
+   border-top-right-radius: 140px;
+   border-bottom-right-radius: 140px;
+   animation: slideInFromRight 2s ease-out forwards;
+    
+}
+.register-container-right{
+
+}
+.register-container-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+.register-container-text h1{
+    font-size: 44px;
+    color: white;
+    margin-bottom: 25px;
+    text-align: left;
+    
+}
+.register-container-text p{
+    text-align: left;
+    color: white;
+    font-size: 22px;
+
+}
+.register-container-form{
+    
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  height: 100vh; 
+}
+.register-form{
+    display: flex;
+    justify-content: center;
+    
+}
+.goToStepOne{
+    display: flex;
+    justify-content: end;
+}
+.goToStepOne Button{
+    background-color: #16445d;
+    font-family: inter;
+}
+.goToStepOne Button:hover{
+background-color:#1f5a7a ;
+}
+.register-container-account{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px 
+}
+.register-container-account p {
+  color: white;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer; 
+  overflow: visible; 
+}
+.goToLogin {
+  margin-left: 5px;
+  white-space: nowrap;
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  color: white;
+}
+.register-container-account p:hover .goToLogin {
+  opacity: 1;
+  transform: translateX(0);
+  color: #faed38;
+}
+
+
+/* Texfield CSS */
+.register-input .MuiFilledInput-root {
+  background-color: #16445d !important;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  min-height: 20px !important;
+
+  
+  
+}
+
+.register-input .MuiFilledInput-input {
+  color: white;
+  padding: 12px 0;
+}
+
+/* Alt çizgi (underline) renkleri */
+.register-input .MuiFilledInput-underline:before {
+  border-bottom: 1px solid #16445d;
+}
+
+.register-input.MuiFilledInput-underline:hover:before {
+  border-bottom: 1px solid white;
+}
+
+.register-input .MuiFilledInput-underline:after {
+  border-bottom: 1px solid white;
+}
+
+.register-goToPrev.MuiButton-root {
+   background-color: #16445d;
+   color: white;
+   font-family: inter;
+}
+.register-goToPrev.MuiButton-root:hover{
+    background-color: #1f5a7a;
+}
+.register-btnSave.MuiButton-root {
+    background-color: #16445d
+}
+.register-btnSave.MuiButton-root:hover{
+    background-color: #1f5a7a;
+}
+.register-input .MuiFormHelperText-root {
+  min-height: 10px; /* helperText alanı hep sabit yükseklikte */
+  font-size: 13px;
+  color: #f44336; /* hata rengi */
+  font-family: "inter";
+  border-radius: 5px;
+  margin-top: 4px;
+  width: 200px;
+  font-weight: 500;
+
+
+}
+
+.register-custom-icon{
+  color:white;
+  font-size: 22px;
+  margin-top: -15px;
+}
+

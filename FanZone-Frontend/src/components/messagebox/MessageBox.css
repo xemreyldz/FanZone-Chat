@@ -1,0 +1,38 @@
+.message-box {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 30px 15px 50px; /* ikon için soldan padding */
+  border-radius: 8px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  font-weight: 600;
+  font-size: 16px;
+  max-width: 90vw;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 12px; /* ikon ile metin arası boşluk */
+  color: white;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  opacity: 1;
+  transition: opacity 2s ease-out; /* 1 saniyede yavaşça kaybolma */
+  
+}
+.message-box.hide {
+  opacity: 0;
+}
+
+.message-box.success {
+  background: rgba(21, 130, 21, 0.7);
+}
+
+.message-box.error {
+  background: rgba(255, 0, 0, 0.7);
+}
+
+.icon {
+  font-size: 25px;
+  flex-shrink: 0;
+}

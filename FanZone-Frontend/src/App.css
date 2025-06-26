@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+html, body {
+
+  overflow-x: hidden; /* YATAY TAŞMAYI ENGELLER */
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+  
+  transition: all 0.3s ease;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,98 @@
+.grouplist-container {
+    width: 350px;
+    background-color: transparent;
+    padding: 10px;
+    color: #000;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    margin-top: 10px;
+    height: 92.5vh;
+}
+
+.grouplist-container.dark {
+    background-color: #000;
+    color: #fff;
+}
+.grouplist-container.light {
+  background-color: #ffffff;
+  color: #000;
+}
+
+
+.grouplist-title {
+    font-family: inter;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.grouplist-input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+/* MUI input styling */
+.grouplist-input .MuiOutlinedInput-root {
+    border-radius: 30px;
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+.grouplist-container.dark .grouplist-input .MuiOutlinedInput-root {
+    background-color: #333;
+    color: #fff;
+}
+
+.grouplist-input .MuiOutlinedInput-notchedOutline {
+    border-color: #ccc;
+}
+
+.grouplist-container.dark .grouplist-input .MuiOutlinedInput-notchedOutline {
+    border-color: #666;
+}
+
+.grouplist-input .Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #003366;
+}
+
+.grouplist-container.dark .Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #66aaff;
+}
+
+.grouplist-scroll-area {
+    max-height: 82%;
+    overflow-y: auto;
+}
+
+.grouplist-groupImage {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #aaa;
+}
+
+.grouplist-container.dark .grouplist-groupImage {
+    background-color: #555;
+}
+
+.grouplist-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.grouplist-item:hover {
+    background-color: #f0f0f0;
+}
+
+.grouplist-container.dark .grouplist-item:hover {
+    background-color: #2e2e2e;
+}

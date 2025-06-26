@@ -1,0 +1,74 @@
+.newgroups-wrapper {
+  display: flex;
+}
+
+.newgroups-card {
+  border-radius: 20px;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+/* Tema: LIGHT */
+.light-mode .newgroups-card {
+  background-color: #faed38;
+  color: black;
+}
+
+.light-mode .newgroups-card-title,
+.light-mode .newgroups-card-text {
+  color: black;
+}
+
+/* Tema: DARK */
+.dark-mode .newgroups-card {
+  background-color: #2c2c2c;
+  color: white;
+}
+
+.dark-mode .newgroups-card-title,
+.dark-mode .newgroups-card-text {
+  color: white;
+}
+
+.newgroups-card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "inter";
+}
+
+.newgroups-card-text {
+  font-family: "inter";
+  font-size: 16px;
+}
+
+.newgroups-card-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.newgroups-card-buttons button {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgb(204, 179, 14);
+  border: none;
+  color: black;
+  font-family: "inter";
+  width: 120px;
+  height: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.newgroups-card-buttons button:hover {
+  background-color: rgb(186, 166, 37);
+}
+
+/* Dark tema için butona özel renk değişimi */
+.dark-mode .newgroups-card-buttons button {
+  background-color: #555;
+  color: white;
+}
+
+.dark-mode .newgroups-card-buttons button:hover {
+  background-color: #888;
+}
