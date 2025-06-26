@@ -1,0 +1,20 @@
+# Ortak ignore'lar
+.DS_Store
+.env
+*.log
+*.zip
+*.tar
+.vscode/
+.idea/
+
+# Frontend için
+FanZone-Frontend/node_modules/
+FanZone-Frontend/build/
+FanZone-Frontend/dist/
+FanZone-Frontend/.env
+
+# Backend için
+FanZone-Backend/node_modules/
+FanZone-Backend/build/
+FanZone-Backend/dist/
+FanZone-Backend/.env
