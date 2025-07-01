@@ -134,7 +134,7 @@ const AccountSettings: React.FC = () => {
         error={error || undefined}
         duration={4000}
       />
-      <Typography variant="h4" component="h1" sx={{ marginBottom: 2 }}>
+      <Typography variant="h4" component="h1">
         Hesap Ayarları
       </Typography>
 

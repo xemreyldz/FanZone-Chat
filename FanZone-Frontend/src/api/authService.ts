@@ -147,3 +147,37 @@ export const getTeamTheme = async () => {
     return null;
   }
 };
+
+
+export const searchUsers = async (query: string) => {
+  const response = await axiosClient.get('/users/search', {
+    params: { query } // teamId backend’den token ile alınıyor artık
+  });
+  return response.data;
+}
+
+// Yeni: Belirli kullanıcıyı gruba davet et
+export const inviteUserToGroup = async (userId: number, groupId: number) => {
+  return axiosClient.post('/users/invite', { userId, groupId });
+};
+
+export const getNotifications = async () => {
+  const response = await axiosClient.get('/notifications');
+  return response.data;
+};
+
+export const acceptInvitation = async (groupId: number, notificationId: number) => {
+  const response = await axiosClient.post('/notifications/accept-invitation', {
+    groupId,
+    notificationId,
+  });
+  return response.data;
+};
+
+export const ignoreNotification = async (notificationId: number, groupId: number) => {
+  const response = await axiosClient.post('/notifications/ignore', {
+    notificationId,
+    groupId,
+  });
+  return response.data;
+};

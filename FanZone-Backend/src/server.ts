@@ -23,6 +23,9 @@ import getUserInfoRouter from "./routes/getuserinfo"
 import updateUserRouter from  "./routes/updateUser"
 import changePasswordRouter from "./routes/changepassword"
 import deleteAccountRouter from "./routes/deleteaccount"
+import searchUserRouter from "./routes/getsearchuser"
+import inviteToGroupRouter from "./routes/invitetogroups"
+import notificationsRouter from './routes/notification';
 import themeRoutes from './routes/defaulttheme';
 
 
@@ -78,7 +81,7 @@ app.use('/groups', authenticateToken, joinGroupRouter);
 
 // Eğer gerekirse messages route’u da authenticateToken ile koruabilirsin
 app.use('/messages', authenticateToken, messagesRouter);
-
+app.use('/notifications',authenticateToken, notificationsRouter);;
 app.use('/addgroup', authenticateToken, createGroupRouter);
 app.use('/groups/user', authenticateToken, getUserGroupsRouter);
 app.use('/upload', authenticateToken, uploadRouter);
@@ -87,7 +90,9 @@ app.use('/userinfo', authenticateToken, getUserInfoRouter);
 app.use('/updateuser', authenticateToken, updateUserRouter);
 app.use('/user',authenticateToken,changePasswordRouter)
 app.use('/user',authenticateToken,deleteAccountRouter)
+app.use("/users",authenticateToken,searchUserRouter)
 
+app.use("/users",authenticateToken,inviteToGroupRouter);
 
 server.listen(5000, () => {
   console.log('Server is running on port 5000 🚀');

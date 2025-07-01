@@ -320,7 +320,7 @@ const Register: React.FC = () => {
                                                     endAdornment: (
                                                         <InputAdornment position="end">
                                                             <IconButton sx={{ marginRight: "5px", marginTop: "18px" }} onClick={handleClickShowPassword} edge="end">
-                                                                {showPassword ? <VisibilityOff sx={{ color: 'white' }} /> : <Visibility sx={{ color: 'white', marginBottom:"15px" }} />}
+                                                                {showPassword ? <VisibilityOff sx={{ color: 'white',marginBottom:"18px" }} /> : <Visibility sx={{ color: 'white', marginBottom:"18px" }} />}
                                                             </IconButton>
                                                         </InputAdornment>
                                                     ),
